@@ -1,0 +1,38 @@
+/* Anonymous Pro - general font */
+
+@font-face {
+  font-family: "Anonymous";
+  src: url("/fonts/AnonymousPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Anonymous-Bold";
+  src: url("/fonts/AnonymousPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Anonymous-Italic";
+  src: url("/fonts/AnonymousPro-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Anonymous-BoldItalic";
+  src: url("/fonts/AnonymousPro-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Jersey 10 - header */
+
+@font-face {
+  font-family: "Jersey10-Regular";
+  src: url("/fonts/Jersey10-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}

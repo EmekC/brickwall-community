@@ -1,0 +1,24 @@
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.563rem;
+  padding: 0 1.25rem;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 992px) {
+  .cardsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    justify-content: stretch;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cardsContainer {
+    grid-template-columns: repeat(3, 21.875rem);
+    justify-content: center;
+    overflow-x: hidden;
+  }
+}

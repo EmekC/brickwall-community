@@ -1,0 +1,42 @@
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  padding: 0.625rem; /* more space when href */
+  overflow-x: hidden;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; /* prevents items overflow, wraps it to next line*/
+  /* width: 100%;
+  max-width: 100%;  */
+  /* THIS IS WHAT FIXED IT */
+
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(95, 95, 104, 0.15);
+  border-radius: 10px;
+  padding: 1.875rem;
+  overflow-x: hidden;
+}
+/* height: 100%;  */
+/* contentBlock
+ grows with the parent element */
+
+/*
+originally general contentBlock:
+.contentBlock {
+  display: flex;
+  width: 85%; for mobile and margin
+  margin: auto; center an element horizontally within its parent contentBlock
+
+  flex-wrap: wrap;
+  I moved it to body
+*/
+
+/*
+used to be div around children
+leaving children if needed
+sx is style override
+*/

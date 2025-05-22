@@ -1,0 +1,158 @@
+*,
+*:before,
+*:after {
+  font-family: "Anonymous", sans-serif;
+  color: var(--primary-color);
+  box-sizing: border-box; /* includes the padding & border in an element's total width and height */
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh; /* takes full viewport height for flexbox centering */
+  padding: 5vh;
+  margin: 0;
+
+  background-image: url("/brickwall-background-v2.JPG");
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color: white;
+  --font-size-h1: 7rem; /* 112px */
+  --font-size-h2: 2rem; /* 32px */
+  --font-size-h3: 1.875rem; /* 30px */
+  --font-size-h4: 1rem; /* 16px */
+  --font-color-h4: #898989;
+  --font-size-p: 1.125rem; /* 18px */
+  --line-height-p: 1.5;
+  --letter-spacing-p: 1px;
+
+  --text-shadow-default: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  --text-shadow-blue: -0.2px 0 #1d12c2, 0 0.2px #1d12c2, 0.2px 0 #1d12c2,
+    0 0.2px #1d12c2;
+  --span-color: #afafaf;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+    background-attachment: scroll; /* Better performance on mobile */
+  }
+}
+
+/* Small tablets */
+@media (min-width: 601px) and (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+}
+
+/* Large tablets */
+@media (min-width: 769px) and (max-width: 992px) {
+  body {
+    padding: 1.5rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 993px) and (max-width: 1200px) {
+  body {
+    padding: 2rem;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1201px) {
+  body {
+    padding: 2.5rem;
+  }
+}
+
+li,
+a {
+  text-decoration: none;
+}
+
+a {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+/* Text */
+
+h1 {
+  font-family: "Jersey10-Regular", sans-serif;
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+h2,
+h3 {
+  font-family: "Anonymous-Bold", sans-serif;
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+  color: var(--font-color-h4);
+  font-weight: 1;
+}
+
+p {
+  font-size: var(--font-size-p);
+  line-height: var(--line-height-p);
+  letter-spacing: var(--letter-spacing-p);
+  text-align: justify; /* justifies text */
+  white-space: pre-line;
+
+  /* respects linebreaks, spaces and tabs still collapse */
+}
+
+.textShadow {
+  text-shadow: var(--text-shadow-default);
+}
+
+.span {
+  color: var(--span-color);
+}
+
+/* http://youtube.com/watch?v=e8SIFP0Q--Y */
+/* use this for sections to keep the page organized? */
+
+/* button:hover,
+input[type="submit"] {
+  cursor: pointer;
+  transform: translateY(-0.25em);
+} 
+
+input,
+textarea {
+  outline: none;
+}
+
+button,
+input[type="submit"] {
+  outline: none;
+  border: none;
+} */
+
+/* media: <600 601 768  992 1200*/

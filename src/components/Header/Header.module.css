@@ -1,0 +1,8 @@
+.heroContent {
+  padding: 3.75rem 0 3.75rem 0;
+  align-self: center;
+  text-align: center;
+  text-shadow: var(--text-shadow-blue);
+  max-width: 100%;
+  overflow-x: hidden;
+}

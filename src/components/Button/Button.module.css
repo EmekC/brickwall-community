@@ -1,0 +1,9 @@
+Button {
+  color: white;
+  font-family: "Jersey10-Regular", sans-serif;
+  font-size: 1.25em;
+}
+
+Button:hover {
+  font-size: 3px;
+}

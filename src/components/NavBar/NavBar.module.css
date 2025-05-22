@@ -1,0 +1,26 @@
+nav {
+  display: flex;
+  justify-content: left;
+  gap: 1.5rem;
+  overflow-x: hidden;
+}
+
+.navContainer {
+  background-color: rgb(204, 204, 204, 0.25);
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1.875rem;
+
+  border: 1.5px solid white;
+  border-radius: 5px;
+
+  overflow: hidden;
+}
+
+a {
+  font-size: 1.5rem;
+  text-shadow: -0.2px 0 #1d12c2, 0 0.2px #1d12c2, 0.2px 0 #1d12c2,
+    0 0.2px #1d12c2;
+  /* padding is in the app.css */
+  overflow-x: hidden;
+}

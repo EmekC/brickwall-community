@@ -2,7 +2,6 @@ nav {
   display: flex;
   justify-content: left;
   gap: 1.5rem;
-  overflow-x: hidden;
 }
 
 .navContainer {
@@ -14,7 +13,6 @@ nav {
   border: 1.5px solid white;
   border-radius: 5px;
 
-  overflow: hidden;
 }
 
 a {
@@ -22,5 +20,4 @@ a {
   text-shadow: -0.2px 0 #1d12c2, 0 0.2px #1d12c2, 0.2px 0 #1d12c2,
     0 0.2px #1d12c2;
   /* padding is in the app.css */
-  overflow-x: hidden;
 }

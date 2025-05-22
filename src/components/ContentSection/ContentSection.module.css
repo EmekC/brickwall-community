@@ -1,8 +1,8 @@
 .contentSection {
   display: flex;
   flex-direction: column;
-  gap: 1.875rem;
-  padding: 0.625rem; /* more space when href */
+  /* gap: 1.875rem; */
+  padding: 0.625rem;  
   overflow-x: hidden;
 }
 
@@ -17,7 +17,7 @@
   border: 1.5px solid rgba(255, 255, 255, 0.1);
   background-color: rgba(95, 95, 104, 0.15);
   border-radius: 10px;
-  padding: 1.875rem;
+  padding: 0.5rem;
   overflow-x: hidden;
 }
 /* height: 100%;  */

@@ -26,12 +26,11 @@ body {
   justify-content: center;
   align-items: center;
 
-  overflow-x: hidden;
 }
 
 :root {
   --primary-color: white;
-  --font-size-h1: 7rem; /* 112px */
+  --font-size-h1: 3rem; /* 112px */
   --font-size-h2: 2rem; /* 32px */
   --font-size-h3: 1.875rem; /* 30px */
   --font-size-h4: 1rem; /* 16px */

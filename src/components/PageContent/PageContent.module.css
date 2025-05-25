@@ -10,8 +10,14 @@
   max-width: 100%;
 }
 
-@media (max-width: 600px) {
-  .pageContent {
-    padding-top: 0;
+.mobilePosition {
+}
+
+@media (max-width: 768px) {
+  .mobilePosition {
+    position: relative !important;
+    left: 0 !important;
+    bottom: auto !important;
+    margin-top: 0.5em;
   }
 }

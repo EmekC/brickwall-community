@@ -8,7 +8,7 @@ interface Props {
   subtitle?: string | React.ReactNode;
   text?: string;
   footer?: string;
-  sx?: React.CSSProperties;
+  sectionStyle?: React.CSSProperties;
 }
 
 function ContentSection({
@@ -18,16 +18,18 @@ function ContentSection({
   subtitle,
   text,
   footer,
-  sx,
+  sectionStyle,
 }: Props) {
   return (
     <section id={id}>
       <div className={styles.contentSection}>
         <h2 className={`text-shadow ${styles.title}`}>{title}</h2>
-        <div className={styles.contentContainer} style={sx}>
+        <div className={styles.contentContainer} style={sectionStyle}>
           {subtitle && <h3 className={styles.subtitle}>{subtitle}</h3>}
-          {text && <p className={styles.text}>{text}</p>}
-          {children}
+          <div>
+            {text && <p className={styles.text}>{text}</p>}
+            {children}
+          </div>
           {footer && (
             <footer style={{ paddingTop: "1.875rem" }}>{footer}</footer>
           )}

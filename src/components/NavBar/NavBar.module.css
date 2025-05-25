@@ -12,8 +12,13 @@
 
 .nav {
   display: flex;
-  justify-content: left;
-  gap: 1rem;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.navGroup {
+  display: flex;
+  gap: 1.5rem;
 }
 
 a {
@@ -24,13 +29,14 @@ a {
 
 a:hover {
   color: #a2a2a2;
+  transform: translateY(-0.05em);
 }
 
 a:active {
   color: black;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1300px) {
   .navContainer {
     display: none;
   }
@@ -51,3 +57,5 @@ a:active {
 } */
 
 /* padding for a is in the app.css */
+
+/* "linear-gradient(to right,rgb(16, 35, 104),rgb(56, 81, 173))" */

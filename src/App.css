@@ -21,6 +21,7 @@ html {
   --font-size-h4: 1rem; /* 16px */
   --font-color-h4: #898989;
   --font-size-p: 1.125rem; /* 18px */
+  --font-size-button: 2rem;
   --line-height-p: 1.5;
   --letter-spacing-p: 1px;
 
@@ -43,6 +44,27 @@ body {
   display: flex;
   justify-content: center;
   /* align-items: center; */
+}
+
+/* Button */
+
+button,
+input[type="submit"] {
+  outline: none;
+  border: none;
+}
+
+@media (hover: hover) {
+  button:hover,
+  input[type="submit"] {
+    cursor: pointer;
+    transform: translateY(-0.2em) rotate(-1deg);
+  }
+}
+
+input,
+textarea {
+  outline: none;
 }
 
 /* Text */
@@ -76,13 +98,14 @@ p {
   line-height: var(--line-height-p);
   letter-spacing: var(--letter-spacing-p);
   white-space: pre-line; /* respects linebreaks, spaces and tabs still collapse */
+  color: #f5f5f5;
 }
 
 .text-shadow {
   text-shadow: var(--text-shadow-default);
 }
 
-span {
+.span-grey {
   color: var(--span-color);
   font-family: inherit;
 }
@@ -141,22 +164,5 @@ a {
 
 /* http://youtube.com/watch?v=e8SIFP0Q--Y */
 /* use this for sections to keep the page organized? */
-
-/* button:hover,
-input[type="submit"] {
-  cursor: pointer;
-  transform: translateY(-0.25em);
-} 
-
-input,
-textarea {
-  outline: none;
-}
-
-button,
-input[type="submit"] {
-  outline: none;
-  border: none;
-} */
 
 /* media: <600 601 768  992 1200*/

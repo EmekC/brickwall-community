@@ -3,6 +3,7 @@ import styles from "./PageContent.module.css";
 import ContentSection from "../ContentSection/ContentSection";
 import CardsContainer from "../CardsContainer/CardsContainer";
 import Header from "../Header/Header";
+import Button from "../Button/Button";
 
 const newsContent = `Welcome to the server!
 We're actively developing new features, jobs, and systems to make your experience better.
@@ -13,7 +14,7 @@ Support the server and stand out with premium benefits — instant access.`;
 
 const rolesSubtitle = (
   <>
-    Choose who you want <span>to be</span>
+    Choose who you want <span className={"span-grey"}>to be</span>
   </>
 );
 
@@ -25,7 +26,27 @@ function PageContent() {
         <CardsContainer />
       </ContentSection>
       <ContentSection id="News" title="News" text={newsContent} />
-      <ContentSection id="VIP" title="VIP Access" text={vipContent} />
+      <ContentSection
+        id="VIP"
+        title="VIP Access"
+        text={vipContent}
+        sectionStyle={{ position: "relative" }}
+      >
+        <Button
+          text={"Purchase VIP"}
+          hoverTitle={"Purchase VIP Access!"}
+          className={styles.mobilePosition}
+          buttonStyle={{
+            position: "absolute",
+            left: "851px",
+            bottom: "25px",
+            backgroundImage: "linear-gradient(to right, #b630d0, #87a1ff)",
+          }}
+          onClickButton={function (): void {
+            throw new Error("Function not implemented.");
+          }}
+        />
+      </ContentSection>
     </div>
   );
 }

@@ -1,23 +1,29 @@
-nav {
-  display: flex;
-  justify-content: left;
-  gap: 1.5rem;
-}
-
 .navContainer {
   background-color: rgb(204, 204, 204, 0.25);
   width: 100%;
-  padding: 0.75rem;
+  padding: 1.2rem 1.1rem;
   margin-top: 1.875rem;
 
   border: 1.5px solid white;
   border-radius: 5px;
+}
 
+nav {
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
 }
 
 a {
   font-size: 1.5rem;
   text-shadow: -0.2px 0 #1d12c2, 0 0.2px #1d12c2, 0.2px 0 #1d12c2,
     0 0.2px #1d12c2;
-  /* padding is in the app.css */
 }
+
+@media (max-width: 600px) {
+  .navContainer {
+    display: none;
+  }
+}
+
+/* padding for a is in the app.css */

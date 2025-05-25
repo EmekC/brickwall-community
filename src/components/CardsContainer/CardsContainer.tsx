@@ -16,24 +16,24 @@ function CardsContainer() {
       />
 
       <Card
-        id="Cook"
-        title="Cook"
+        id="Thief"
+        title="Thief"
         subtitle="high-risk high-reward"
         text={cardCookContent}
         tag="<criminal>"
       />
 
       <Card
-        id="Cook"
-        title="Cook"
+        id="Investigator"
+        title="Investigator"
         subtitle="high-risk high-reward"
         text={cardCookContent}
         tag="<criminal>"
       />
 
       <Card
-        id="Cook"
-        title="Cook"
+        id="Hacker"
+        title="Hacker"
         subtitle="high-risk high-reward"
         text={cardCookContent}
         tag="<criminal>"

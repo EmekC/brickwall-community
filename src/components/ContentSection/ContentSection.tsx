@@ -23,12 +23,10 @@ function ContentSection({
   return (
     <section id={id}>
       <div className={styles.contentSection}>
-        <h2 className={"textShadow"}>{title}</h2>
+        <h2 className={`textShadow ${styles.title}`}>{title}</h2>
         <div className={styles.contentContainer} style={sx}>
-          {subtitle && (
-            <h3 style={{ paddingBottom: "1.875rem" }}>{subtitle}</h3>
-          )}
-          {text && <p>{text}</p>}
+          {subtitle && <h3 className={styles.subtitle}>{subtitle}</h3>}
+          {text && <p className={styles.text}>{text}</p>}
           {children}
           {footer && (
             <footer style={{ paddingTop: "1.875rem" }}>{footer}</footer>

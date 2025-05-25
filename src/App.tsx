@@ -5,7 +5,7 @@ import PageContent from "./components/PageContent/PageContent";
 function App() {
   return (
     <>
-      {/* <NavBar /> */}
+      <NavBar />
       <PageContent />
     </>
   );

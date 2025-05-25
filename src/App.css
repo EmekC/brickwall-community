@@ -3,13 +3,30 @@
 *:after {
   font-family: "Anonymous", sans-serif;
   color: var(--primary-color);
-  box-sizing: border-box; /* includes the padding & border in an element's total width and height */
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: white;
+  --font-size-h1: 7rem; /* 112px */
+  --font-size-h2: 2rem; /* 32px */
+  --font-size-h3: 1.875rem; /* 30px */
+  --font-size-h4: 1rem; /* 16px */
+  --font-color-h4: #898989;
+  --font-size-p: 1.125rem; /* 18px */
+  --line-height-p: 1.5;
+  --letter-spacing-p: 1px;
+
+  --text-shadow-default: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  --text-shadow-blue: -0.2px 0 #1d12c2, 0 0.2px #1d12c2, 0.2px 0 #1d12c2,
+    0 0.2px #1d12c2;
+  --span-color: #afafaf;
 }
 
 body {
@@ -25,30 +42,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-}
-
-:root {
-  --primary-color: white;
-  --font-size-h1: 3rem; /* 112px */
-  --font-size-h2: 2rem; /* 32px */
-  --font-size-h3: 1.875rem; /* 30px */
-  --font-size-h4: 1rem; /* 16px */
-  --font-color-h4: #898989;
-  --font-size-p: 1.125rem; /* 18px */
-  --line-height-p: 1.5;
-  --letter-spacing-p: 1px;
-
-  --text-shadow-default: 2px 2px 2px rgba(0, 0, 0, 0.3);
-  --text-shadow-blue: -0.2px 0 #1d12c2, 0 0.2px #1d12c2, 0.2px 0 #1d12c2,
-    0 0.2px #1d12c2;
-  --span-color: #afafaf;
 }
 
 @media (max-width: 600px) {
   body {
-    padding: 1rem;
-    background-attachment: scroll; /* Better performance on mobile */
+    background-attachment: scroll; /* better performance on mobile */
+  }
+
+  :root {
+    --font-size-h1: 2.7rem; /* 112px */
+  }
+
+  body p {
+    text-align: start;
   }
 }
 
@@ -78,16 +84,6 @@ body {
   body {
     padding: 2.5rem;
   }
-}
-
-li,
-a {
-  text-decoration: none;
-}
-
-a {
-  font-size: 1.5rem;
-  padding: 1rem;
 }
 
 /* Text */
@@ -120,10 +116,7 @@ p {
   font-size: var(--font-size-p);
   line-height: var(--line-height-p);
   letter-spacing: var(--letter-spacing-p);
-  text-align: justify; /* justifies text */
-  white-space: pre-line;
-
-  /* respects linebreaks, spaces and tabs still collapse */
+  white-space: pre-line; /* respects linebreaks, spaces and tabs still collapse */
 }
 
 .textShadow {
@@ -132,6 +125,16 @@ p {
 
 .span {
   color: var(--span-color);
+}
+
+li,
+a {
+  text-decoration: none;
+}
+
+a {
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 /* http://youtube.com/watch?v=e8SIFP0Q--Y */

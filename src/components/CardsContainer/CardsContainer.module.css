@@ -2,10 +2,18 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   gap: 1.563rem;
-  padding: 0 1.25rem;
+  padding: 0 1.5rem; /* I want the cards to be a bit more centered than subtitle */
   width: 100%;
 }
 
+/* mobile */
+@media (max-width: 600px) {
+  .cardsContainer {
+    padding: 0 0.5rem;
+  }
+}
+
+/* tablet */
 @media (max-width: 992px) {
   .cardsContainer {
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
@@ -13,9 +21,9 @@
   }
 }
 
+/* desktop */
 @media (min-width: 1200px) {
   .cardsContainer {
     grid-template-columns: repeat(3, 21.875rem);
-    justify-content: center;
   }
 }

@@ -1,9 +1,9 @@
 .contentSection {
   display: flex;
   flex-direction: column;
-  /* gap: 1.875rem; */
-  padding: 0.625rem;  
-  overflow-x: hidden;
+  gap: 1.875rem;
+
+  margin-top: 0.625rem; /* more space for href */
 }
 
 .contentContainer {
@@ -17,12 +17,37 @@
   border: 1.5px solid rgba(255, 255, 255, 0.1);
   background-color: rgba(95, 95, 104, 0.15);
   border-radius: 10px;
-  padding: 0.5rem;
+  padding: 1.875rem;
   overflow-x: hidden;
 }
-/* height: 100%;  */
-/* contentBlock
- grows with the parent element */
+
+.subtitle {
+  padding-bottom: 1.875rem;
+}
+
+@media (max-width: 600px) {
+  .contentContainer {
+    padding: 1rem;
+  }
+
+  .contentSection {
+    gap: 1rem;
+  }
+
+  .subtitle {
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .text {
+    padding: 0.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
 
 /*
 originally general contentBlock:

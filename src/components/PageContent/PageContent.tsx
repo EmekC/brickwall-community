@@ -20,11 +20,11 @@ function PageContent() {
   return (
     <div className={styles.pageContent}>
       <Header />
-      <ContentSection id="Roles" title="Roles" subtitle={rolesSubtitle}>
+      <ContentSection id="Roles" title="Custom Roles" subtitle={rolesSubtitle}>
         <CardsContainer />
       </ContentSection>
-      {/* <ContentSection id="News" title="News" text={newsContent} /> */}
-      {/* <ContentSection id="VIP" title="VIP Access" text={vipContent} /> */}
+      <ContentSection id="News" title="News" text={newsContent} />
+      <ContentSection id="VIP" title="VIP Access" text={vipContent} />
     </div>
   );
 }

@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
 
-  width: 100%;
-  max-width: 21.875rem;
-  aspect-ratio: 5 / 4;
+  width: 100%; /* of cell size */
+  max-width: 21.875rem; /* max-width we want to have - for browser */
+  aspect-ratio: 5 / 4; /* height to width ratio card */
 
   padding: 1.875rem;
   color: #fbfbfb;
@@ -22,16 +22,32 @@
 
 .cardSubtitle {
   align-self: center;
-  margin-top: 0.313rem;
+  margin-top: 0.3rem;
   font-style: italic;
 }
 
 .cardText {
-  justify-content: center;
-  margin-top: 1.563rem;
+  margin-top: 1.5rem;
+  text-align: justify; /* justifies text */
 }
 
 .cardTag {
   align-self: flex-end;
   margin-top: 1.875rem;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 1rem;
+  }
+
+  .cardText {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    text-align: start;
+  }
+
+  .cardTag {
+    margin-top: 0;
+  }
 }

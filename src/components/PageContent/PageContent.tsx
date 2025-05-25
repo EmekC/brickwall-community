@@ -13,25 +13,19 @@ Support the server and stand out with premium benefits — instant access.`;
 
 const rolesSubtitle = (
   <>
-    Choose who you want <span className="span">to be</span>
+    Choose who you want <span>to be</span>
   </>
 );
 
 function PageContent() {
   return (
-    <div className={styles.pageWrapper}>
-      <div className={styles.pageContent}>
-        <Header />
-        <ContentSection
-          id="Roles"
-          title="Custom Roles"
-          subtitle={rolesSubtitle}
-        >
-          <CardsContainer />
-        </ContentSection>
-        <ContentSection id="News" title="News" text={newsContent} />
-        <ContentSection id="VIP" title="VIP Access" text={vipContent} />
-      </div>
+    <div className={styles.pageContent}>
+      <Header />
+      <ContentSection id="Roles" title="Custom Roles" subtitle={rolesSubtitle}>
+        <CardsContainer />
+      </ContentSection>
+      <ContentSection id="News" title="News" text={newsContent} />
+      <ContentSection id="VIP" title="VIP Access" text={vipContent} />
     </div>
   );
 }

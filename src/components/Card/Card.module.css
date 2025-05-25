@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: column;
 
-  width: 100%; /* of cell size */
+  width: 100%;
+  height: 100%;
   max-width: 21.875rem; /* max-width we want to have - for browser */
-  aspect-ratio: 5 / 4; /* height to width ratio card */
+  aspect-ratio: 5 / 4;
 
   padding: 1.875rem;
   color: #fbfbfb;
@@ -16,8 +17,20 @@
   /* inset -  turns outer shadow into inner */
 }
 
-.cardTitle {
+.titleContainer {
+  display: flex;
+  justify-content: center;
+}
+
+/* .cardTitle {
   align-self: center;
+} */
+
+.icon {
+  width: 2em;
+  height: 2em;
+  max-width: 100%;
+  margin-left: 10px;
 }
 
 .cardSubtitle {
@@ -33,21 +46,28 @@
 
 .cardTag {
   align-self: flex-end;
-  margin-top: 1.875rem;
+  margin-top: auto;
+}
+
+/* for device that only support hovering */
+@media (hover: hover) {
+  .card:hover {
+    & .cardTitle {
+      color: #ffe310;
+    }
+    background-color: rgba(187, 200, 249, 0.3);
+  }
 }
 
 @media (max-width: 600px) {
   .card {
     padding: 1rem;
+    aspect-ratio: unset;
   }
 
   .cardText {
     margin-left: 1rem;
     margin-top: 1rem;
     text-align: start;
-  }
-
-  .cardTag {
-    margin-top: 0;
   }
 }

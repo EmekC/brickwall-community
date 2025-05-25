@@ -48,20 +48,3 @@
     font-size: 1.5rem;
   }
 }
-
-/*
-originally general contentBlock:
-.contentBlock {
-  display: flex;
-  width: 85%; for mobile and margin
-  margin: auto; center an element horizontally within its parent contentBlock
-
-  flex-wrap: wrap;
-  I moved it to body
-*/
-
-/*
-used to be div around children
-leaving children if needed
-sx is style override
-*/

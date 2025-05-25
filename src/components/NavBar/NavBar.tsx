@@ -4,7 +4,7 @@ function NavBar() {
   return (
     <div className={styles.navContainer}>
       <nav className={styles.nav}>
-        <a href="#Home">Home</a>
+        <a href="#">Home</a>
         <a href="#Roles">Roles</a>
         <a href="#News">News</a>
         <a style={{ fontStyle: "italic" }} href="#VIP">

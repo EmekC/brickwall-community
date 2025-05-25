@@ -1,4 +1,5 @@
 import styles from "./PageContent.module.css";
+/* components */
 import ContentSection from "../ContentSection/ContentSection";
 import CardsContainer from "../CardsContainer/CardsContainer";
 import Header from "../Header/Header";
@@ -18,13 +19,19 @@ const rolesSubtitle = (
 
 function PageContent() {
   return (
-    <div className={styles.pageContent}>
-      <Header />
-      <ContentSection id="Roles" title="Custom Roles" subtitle={rolesSubtitle}>
-        <CardsContainer />
-      </ContentSection>
-      <ContentSection id="News" title="News" text={newsContent} />
-      <ContentSection id="VIP" title="VIP Access" text={vipContent} />
+    <div className={styles.pageWrapper}>
+      <div className={styles.pageContent}>
+        <Header />
+        <ContentSection
+          id="Roles"
+          title="Custom Roles"
+          subtitle={rolesSubtitle}
+        >
+          <CardsContainer />
+        </ContentSection>
+        <ContentSection id="News" title="News" text={newsContent} />
+        <ContentSection id="VIP" title="VIP Access" text={vipContent} />
+      </div>
     </div>
   );
 }

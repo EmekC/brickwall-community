@@ -10,14 +10,25 @@
   max-width: 100%;
 }
 
-.mobilePosition {
+.vipBtnPosition {
+  position: absolute;
+  left: 851px;
+  bottom: 25px;
 }
 
-@media (max-width: 768px) {
-  .mobilePosition {
+.vipSection {
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .vipBtnPosition {
     position: relative !important;
     left: 0 !important;
     bottom: auto !important;
     margin-top: 0.5em;
+  }
+
+  .pageContent {
+    padding-top: 0;
   }
 }

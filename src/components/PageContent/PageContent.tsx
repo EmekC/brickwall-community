@@ -30,21 +30,14 @@ function PageContent() {
         id="VIP"
         title="VIP Access"
         text={vipContent}
-        sectionStyle={{ position: "relative" }}
+        className={styles.vipSection}
       >
         <Button
           text={"Purchase VIP"}
-          hoverTitle={"Purchase VIP Access!"}
-          className={styles.mobilePosition}
-          buttonStyle={{
-            position: "absolute",
-            left: "851px",
-            bottom: "25px",
-            backgroundImage: "linear-gradient(to right, #b630d0, #87a1ff)",
-          }}
-          onClickButton={function (): void {
-            throw new Error("Function not implemented.");
-          }}
+          hoverText={"Purchase VIP Access!"}
+          variant="pink"
+          className={styles.vipBtnPosition}
+          onClickButton={function (): void {}}
         />
       </ContentSection>
     </div>
@@ -62,4 +55,10 @@ export default PageContent;
           text={cardCookContent}
           tag="<criminal>"
         />
+
+
+position: "absolute",
+            left: "851px",
+            bottom: "25px",
+            backgroundImage: "linear-gradient(to right, #b630d0, #87a1ff)",
 */

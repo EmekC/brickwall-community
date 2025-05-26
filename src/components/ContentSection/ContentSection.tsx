@@ -2,13 +2,13 @@ import type { ReactNode } from "react";
 import styles from "./ContentSection.module.css";
 
 interface Props {
-  children?: ReactNode;
   id: string;
   title: string;
   subtitle?: string | React.ReactNode;
   text?: string;
+  children?: ReactNode;
   footer?: string;
-  sectionStyle?: React.CSSProperties;
+  className?: string;
 }
 
 function ContentSection({
@@ -18,13 +18,13 @@ function ContentSection({
   subtitle,
   text,
   footer,
-  sectionStyle,
+  className,
 }: Props) {
   return (
     <section id={id}>
       <div className={styles.contentSection}>
         <h2 className={`text-shadow ${styles.title}`}>{title}</h2>
-        <div className={styles.contentContainer} style={sectionStyle}>
+        <div className={`${styles.contentContainer} ${className}`}>
           {subtitle && <h3 className={styles.subtitle}>{subtitle}</h3>}
           <div>
             {text && <p className={styles.text}>{text}</p>}

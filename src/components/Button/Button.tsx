@@ -2,25 +2,22 @@ import styles from "./Button.module.css";
 
 interface Props {
   text: string;
-  hoverTitle: string;
-  buttonStyle?: React.CSSProperties;
-  onClickButton: () => void;
+  hoverText: string;
+  variant?: "pink" | "discord";
   className?: string;
+  onClickButton: () => void;
 }
 
-function Button({
-  text,
-  hoverTitle,
-  buttonStyle,
-  className,
-  onClickButton,
-}: Props) {
+function Button({ text, hoverText, className, variant, onClickButton }: Props) {
   return (
     <button
       type="button"
-      title={hoverTitle}
-      className={`${styles.button} ${className || ""}`}
-      style={buttonStyle}
+      title={hoverText}
+      className={`
+        ${styles.button} 
+        ${variant ? styles[variant] : ""} 
+        ${className}
+      `}
       onClick={onClickButton}
     >
       {text}

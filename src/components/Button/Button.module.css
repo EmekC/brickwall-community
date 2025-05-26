@@ -1,5 +1,9 @@
 .button {
-  background-image: linear-gradient(to right, #4168f5, #87a1ff);
+  background-image: linear-gradient(
+    to right,
+    rgb(33, 54, 131),
+    rgb(90, 107, 168)
+  );
   color: white;
   border-radius: 11px;
   box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25),
@@ -24,14 +28,10 @@
   color: #ffe310;
 }
 
-/* .btnPink {
+.pink {
   background-image: linear-gradient(to right, #b630d0, #87a1ff);
 }
 
-.btnDiscord {
+.discord {
   background-image: linear-gradient(to right, #4168f5, #87a1ff);
-} */
-
-/* Button:hover {
-  font-size: 1em;
-} */
+}

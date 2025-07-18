@@ -1,15 +1,19 @@
 {
   "name": "brickwall-community",
   "private": true,
+	"homepage": "https://brickwall-community.com/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-lazy-load-image-component": "^1.6.3"

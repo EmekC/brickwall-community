@@ -9,7 +9,7 @@ function Header({}: Props) {
   return (
     <div className={styles.heroContent}>
       <h1>Brickwall Community</h1>
-      <h3>Unique Dark RP Experience</h3>
+      <h3>Best GMOD DarkRP Server in 2025!</h3>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 {
   "name": "brickwall-community",
   "private": true,
-  "homepage": "https://brickwall-community.com/",
+  "homepage": "https://emekc.github.io/brickwall-community/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

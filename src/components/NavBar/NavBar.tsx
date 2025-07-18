@@ -1,17 +1,32 @@
+import { useEffect, useState } from "react";
 import Button from "../Button/Button";
 import styles from "./NavBar.module.css";
 
 function NavBar() {
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }, []);
+
   return (
-    <div className={styles.navContainer}>
+    <div className={`${styles.navContainer} ${scrolled ? styles.navContainer_scroll : ""}`}>
       <nav className={styles.nav}>
         <div className={styles.navGroup}>
           <a href="#">Home</a>
           <a href="#Roles">Roles</a>
           <a href="#News">News</a>
-          <a style={{ fontStyle: "italic" }} href="#VIP">
+          {/* <a style={{ fontStyle: "italic" }} href="#VIP">
             VIP
-          </a>
+          </a> */}
         </div>
         <div className={styles.navGroup}>
           <Button

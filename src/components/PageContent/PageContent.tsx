@@ -5,9 +5,8 @@ import CardsContainer from "../CardsContainer/CardsContainer";
 import Header from "../Header/Header";
 import Button from "../Button/Button";
 
-const newsContent = `Welcome to the server!
-We're actively developing new features, jobs, and systems to make your experience better.
-Stay tuned for updates, events, and patch notes — things are just getting started.`;
+const newsContent = `Here we will share news about the server.
+Enjoy the best GMOD DarkRP experience with us!`;
 
 const vipContent = `Unlock exclusive perks, jobs, and cosmetics with a VIP account.
 Support the server and stand out with premium benefits — instant access.`;
@@ -26,7 +25,7 @@ function PageContent() {
         <CardsContainer />
       </ContentSection>
       <ContentSection id="News" title="News" text={newsContent} />
-      <ContentSection
+      {/* <ContentSection
         id="VIP"
         title="VIP Access"
         text={vipContent}
@@ -39,7 +38,7 @@ function PageContent() {
           className={styles.vipBtnPosition}
           onClickButton={function (): void {}}
         />
-      </ContentSection>
+      </ContentSection> */}
     </div>
   );
 }

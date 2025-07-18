@@ -33,7 +33,7 @@ html {
 
 body {
   min-height: 100vh; /* takes full viewport height for flexbox centering */
-  padding: 5vh;
+  /* padding: 5vh; */
   margin: 0;
 
   background-image: url("/brickwall-background-v2.JPG");
@@ -158,7 +158,7 @@ a {
 /* Large desktop */
 @media (min-width: 1201px) {
   body {
-    padding: 2.5rem;
+    /* padding: 2.5rem; */
   }
 }
 

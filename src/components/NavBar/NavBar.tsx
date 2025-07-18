@@ -24,6 +24,7 @@ function NavBar() {
           <a href="#">Home</a>
           <a href="#Roles">Roles</a>
           <a href="#News">News</a>
+          <a href="https://www.youtube.com/@brickwallrp" target="_blank" rel="noopener norefferer">Youtube</a>
           {/* <a style={{ fontStyle: "italic" }} href="#VIP">
             VIP
           </a> */}

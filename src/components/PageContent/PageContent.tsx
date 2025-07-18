@@ -3,13 +3,13 @@ import styles from "./PageContent.module.css";
 import ContentSection from "../ContentSection/ContentSection";
 import CardsContainer from "../CardsContainer/CardsContainer";
 import Header from "../Header/Header";
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 
 const newsContent = `Here we will share news about the server.
 Enjoy the best GMOD DarkRP experience with us!`;
 
-const vipContent = `Unlock exclusive perks, jobs, and cosmetics with a VIP account.
-Support the server and stand out with premium benefits — instant access.`;
+// const vipContent = `Unlock exclusive perks, jobs, and cosmetics with a VIP account.
+// Support the server and stand out with premium benefits — instant access.`;
 
 const rolesSubtitle = (
   <>

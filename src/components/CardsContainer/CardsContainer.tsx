@@ -19,7 +19,7 @@ function CardsContainer() {
       <Card
         id="Cook"
         title="Cook"
-        icon="public/meth-icon.png"
+        icon="meth-icon.png"
         subtitle="high-risk high-reward"
         text={cardCookContent}
         tag="<criminal>"
@@ -28,7 +28,7 @@ function CardsContainer() {
       <Card
         id="Thief"
         title="Thief"
-        icon="public/thief-icon.png"
+        icon="thief-icon.png"
         subtitle="Criminal"
         text={cardThiefContent}
         tag="<criminal>"
@@ -37,7 +37,7 @@ function CardsContainer() {
       <Card
         id="Investigator"
         title="Investigator"
-        icon="public/investigator-icon.png"
+        icon="investigator-icon.png"
         subtitle="Police Investigator"
         text={cardInvestigatorContent}
         tag="<criminal>"
@@ -46,7 +46,7 @@ function CardsContainer() {
       <Card
         id="Hacker"
         title="Hacker"
-        icon="public/hacker-icon.png"
+        icon="hacker-icon.png"
         subtitle="Criminal"
         text={cardHackerContent}
         tag="<criminal>"

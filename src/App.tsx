@@ -2,6 +2,7 @@ import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import PageContent from "./components/PageContent/PageContent";
 
+
 function App() {
   return (
     <>
